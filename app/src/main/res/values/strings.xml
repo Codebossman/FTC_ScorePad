@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">FTC ScorePad</string>
+    <string name="score">Score</string>
+    <string name="stats">stats</string>
 </resources>
