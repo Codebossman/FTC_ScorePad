@@ -24,13 +24,16 @@ public class MainActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
-        Button score = (Button) findViewById(R.id.scoreButton);
-        score.setBackgroundColor(Color.RED);
-        score.setOnClickListener(new View.OnClickListener() {
+        Button newMatch = (Button) findViewById(R.id.newMatchButton);
+        newMatch.setBackgroundColor(Color.RED);
+        newMatch.setTextColor(Color.BLACK);
+
+        newMatch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 // Code to execute when the button is clicked
-                Toast.makeText(MainActivity.this, "Button was clicked!", Toast.LENGTH_SHORT).show();
+//                Toast.makeText(MainActivity.this, "Button was clicked!", Toast.LENGTH_SHORT).show();
+                setContentView(R.layout.new_match);
             }
         });
 
